@@ -1,0 +1,21 @@
+@import-normalize;
+
+@font-face {
+  font-family: 'Nunito', sans-serif;;
+  src: url(../src/fonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: 'ZenMaru';
+  src: url(../src/fonts/Zen_Maru_Gothic/ZenMaruGothic-Regular.ttf);
+} */
+
+body {
+  margin: 0;
+  font-family: 'Nunito';
+  color: "white";
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
