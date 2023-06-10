@@ -19,34 +19,54 @@ export default function ProjectDescription() {
           font: "ZenMaru",
           fontWeight: 700,
           fontSize: 16,
+          mb: 1.5,
         }}
       >
         Описание
       </Box>
       <Box
         sx={{
-          display: "inline",
+          display: "flex",
+          flexDirection: "column",
           width: 318,
           height: 197,
           font: "Nunito",
           fontWeight: 400,
           fontSize: 14,
-          flexBasis: 0,
         }}
       >
-        <p>
+        <Box>
           Разработка и создание веб-приложения, которое будет обладать
           определенными функциональными возможностями. Проект включает в себя
           создание дизайна и верстку сайта, написание программного кода,
           интеграцию с различными сервисами и платформами, тестирование и
-          оптимизацию производительности.{" "}
-        </p>
-        Цель проекта - обеспечить удобство использования сайта, повысить его
-        функциональность и привлекательность для пользователей.
+          оптимизацию производительности.
+        </Box>
+        <Box
+          sx={{
+            display: "block",
+            overflow: "hidden",
+            whiteSpace: "nowrap",
+            textOverflow: "ellipsis",
+            mt: 3,
+            pb: 2,
+          }}
+        >
+          Цель проекта - обеспечить удобство использования сайта, повысить его
+          функциональность и привлекательность для пользователей.
+        </Box>
       </Box>
-      <Link href="#" color="#00A1E7">
-        Подробнее
-      </Link>
+      <Box
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "end",
+          mt: 0.8,
+          color: "#00A1E7",
+        }}
+      >
+        <Link href="#">Подробнее</Link>
+      </Box>
     </Box>
   );
 }
