@@ -1,10 +1,8 @@
 import React from "react";
-// import Typography from "@material-ui/core/Typography";
-import { IconButton } from "@material-ui/core";
 import { Box } from "@mui/system";
 import LikeBtn from "./LikeBtn";
 
-export default function Header() {
+export default function HeaderCard() {
   return (
     <Box
       sx={{
@@ -21,7 +19,7 @@ export default function Header() {
               display: "inline",
               flexGrow: 1,
               maxWidth: 294,
-              font: "ZenMaru",
+              fontFamily: "ZenMaru",
               fontWeight: 700,
               fontSize: 20,
             }}
@@ -33,7 +31,7 @@ export default function Header() {
         <Box
           sx={{
             color: "white",
-            font: "Nunito",
+            fontFamily: "Nunito",
             fontWeight: 400,
             fontSize: 14,
           }}

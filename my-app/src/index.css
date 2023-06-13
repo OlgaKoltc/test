@@ -1,17 +1,17 @@
 @import-normalize;
 
 @font-face {
-  font-family: 'Nunito', sans-serif;;
+  font-family: 'Nunito';
   src: url(../src/fonts/Nunito/Nunito-VariableFont_wght.ttf);
 }
 @font-face {
   font-family: 'ZenMaru';
   src: url(../src/fonts/Zen_Maru_Gothic/ZenMaruGothic-Regular.ttf);
-} */
+} 
 
 body {
   margin: 0;
-  font-family: 'Nunito';
+  font-family: 'ZenMaru', 'Nunito';
   color: "white";
 }
 

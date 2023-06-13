@@ -16,7 +16,7 @@ export default function ProjectDescription() {
       <Box
         sx={{
           display: "inline",
-          font: "ZenMaru",
+          fontFamily: "ZenMaru",
           fontWeight: 700,
           fontSize: 16,
           mb: 1.5,
@@ -30,7 +30,7 @@ export default function ProjectDescription() {
           flexDirection: "column",
           width: 318,
           height: 197,
-          font: "Nunito",
+          fontFamily: "Nunito",
           fontWeight: 400,
           fontSize: 14,
         }}
