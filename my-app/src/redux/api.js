@@ -9,11 +9,10 @@ export const api = createApi({
         likePost: (builder.query({
             query: (id) => ({
                 url: 'ttps://jsonplaceholder.typicode.com',
-                params:
-                
+                params: {}
             })
         })
-        )
+        ),
     })
 });
 
