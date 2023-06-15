@@ -1,17 +1,20 @@
-import { configureStore } from '@reduxjs/toolkit'
-import { setupListeners } from '@reduxjs/toolkit/query'
-import { api } from './api'
+import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
-export const store = configureStore({
-    reducer: {
-        // Добовляем редьюсер как слайс
-        [api.reducerPath]: api.reducer,
-    },
-    // Добавляем апи мидлвар, что даст нам кэширование, инвалидацию, полинг,
-    // и другие полезные штуки
-    middleware: (getDefaultMiddleware) =>
-        getDefaultMiddleware().concat(api.middleware),
-})
+// const url = 'https://jsonplaceholder.typicode.com/posts';
 
-// Это нужно для refetchOnFocus/refetchOnReconnect behaviors
-setupListeners(store.dispatch)
+export const api = createApi({
+    reducerPath: 'cards',
+    baseQuery: fetchBaseQuery({ baseUrl: 'ttps://jsonplaceholder.typicode.com/posts/' }),
+    endpoints: (builder) => ({
+        likePost: (builder.query({
+            query: (id) => ({
+                url: 'ttps://jsonplaceholder.typicode.com',
+                params:
+                
+            })
+        })
+        )
+    })
+});
+
+export const { useGetCardsQuery, useGetCardQuery, useGetPostQuery } = api;
