@@ -10,8 +10,8 @@ export default function VacanciesList() {
         flexDirection: "column",
         width: 318,
         height: 165,
-        mt: 1.5,
-        mb: 3,
+        mt: 1,
+        mb: 2,
       }}
     >
       <Box
@@ -44,7 +44,7 @@ export default function VacanciesList() {
             lineHeight: "135%",
             color: "#FFFFFF",
             textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
-            mt: 3,
+            mt: 1,
           }}
         >
           Реализовано проектов в JH - 2
